@@ -21,7 +21,7 @@
  * @return array Conditionally modified tags array.
  */
 function mla_allow_multisite_extra_tags( $allowed_tags, $context ) {
- 
+
 	if ( function_exists( 'is_multisite' ) && is_multisite() && is_super_admin() ) {
 		return $allowed_tags;
 	} else if ( ! current_user_can( 'editor' ) && ! current_user_can( 'administrator' ) ) {
@@ -57,6 +57,12 @@ function mla_allow_multisite_extra_tags( $allowed_tags, $context ) {
 		$multisite_extra_tags['script'] = array(
 			'language' => true,
 			'type' => true
+		);
+		$multisite_extra_tags['a'] = array(
+			'class' => true,
+			'href' => true,
+			'rel' => true,
+			'target' => true
 		);
 
 	} else if ( 'title_save_pre' === $context ) {
