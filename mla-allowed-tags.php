@@ -2,13 +2,13 @@
 /**
  * MLA Allowed Tags
  *
- * We don't need no super admin.
+ * Allow iframe, embed and script tags in post content for editor and administrator. Allow class attribute on strong tag in title.
  *
  */
 
 /**
  * Plugin Name: MLA Allowed Tags
- * Description: We don't need no super admin.
+ * Description: Allow iframe, embed and script tags in post content for editor and administrator. Allow class attribute on strong tag in title.
  * Version: 1.0
  * Author: MLA
  */
