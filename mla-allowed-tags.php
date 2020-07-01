@@ -62,7 +62,8 @@ function mla_allow_multisite_extra_tags( $allowed_tags, $context ) {
 			'class' => true,
 			'href' => true,
 			'rel' => true,
-			'target' => true
+			'target' => true,
+			'id' => true
 		);
 
 	} else if ( 'title_save_pre' === $context ) {
